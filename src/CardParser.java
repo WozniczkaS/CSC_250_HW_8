@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.List;
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
@@ -60,6 +62,70 @@ public class CardParser
 		//Note: this.theMinions.get(3).getCost() will give you the cost of card #3
 		//Note: this.theMinions.remove(3) will remove the card that used to be at bucket 3
 		//you will need to cobble together your own algorithm for getting this arraylist sorted
-		
+		String arraylist = "";
+		CardParser cp = new CardParser("https://api.hearthstonejson.com/v1/25770/enUS/cards.json");
+		for(int i = 0; i < ((List) cp).size(); i++)
+		{
+			if(cardData.containsKey("cost") == 1)
+			{
+				arraylist.append(i);
+			}
+		}
+		for(int i = 0; i < ((List) cp).size(); i++)
+		{
+			if(cardData.containsKey("cost") == 2)
+			{
+				arraylist.append(i);
+			}
+		}
+		for(int i = 0; i < ((List) cp).size(); i++)
+		{
+			if(cardData.containsKey("cost") == 3)
+			{
+				arraylist.append(i);
+			}
+		}
+		for(int i = 0; i < ((List) cp).size(); i++)
+		{
+			if(cardData.containsKey("cost") == 4)
+			{
+				arraylist.append(i);
+			}
+		}
+		for(int i = 0; i < ((List) cp).size(); i++)
+		{
+			if(cardData.containsKey("cost") == 5)
+			{
+				arraylist.append(i);
+			}
+		}
+		for(int i = 0; i < ((List) cp).size(); i++)
+		{
+			if(cardData.containsKey("cost") == 6)
+			{
+				arraylist.append(i);
+			}
+		}
+		for(int i = 0; i < ((List) cp).size(); i++)
+		{
+			if(cardData.containsKey("cost") == 7)
+			{
+				arraylist.append(i);
+			}
+		}
+		for(int i = 0; i < ((List) cp).size(); i++)
+		{
+			if(cardData.containsKey("cost") == 8)
+			{
+				arraylist.append(i);
+			}
+		}
+		for(int i = 0; i < ((List) cp).size(); i++)
+		{
+			if(cardData.containsKey("cost") == 9)
+			{
+				arraylist.append(i);
+			}
+		}
 	}
 }
